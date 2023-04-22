@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <div id="main-heading">
+        <h1> Chat App</h1>
+    </div>
+    <div class="chat_and_contacts">
+        <div class="contacts">
+            <div class="single__contacts" id="single__contacts">
+                <h4>Single Contacts</h4>
+                <div class="single__contact">
+                    <h5>One</h5>
+                </div>
+                <div class="single__contact">
+                    <h5>Two</h5>
+                </div>
+                <div class="single__contact">
+                    <h5>Three</h5>
+                </div>
+            </div>
+            <div class="groups" id="groups">
+                <h4>Groups</h4>
+                <div class="single__group">
+                    <h5>flat</h5>
+                </div>
+                <div class="single__group">
+                    <h5>family</h5>
+                </div>
+
+
+            </div>
+            <div class="createNewGroup">
+                <form action="" method="post" id="form__newGroup">
+                    <input type="text" placeholder="Enter Group Name" id="newGroup__input">
+                    <input type="submit" value="Add New Group">
+                </form>
+            </div>
+
+        </div>
+        <div class="chat__section" >
+            <div class="display__chat" id="display__chat">
+                <h4 id="person__name">Demo Name</h4>
+                <div class="actual__chat">
+                    <div class="my__message msgs">
+                        <!-- <h4> this message is from Abhishek</h4>
+                        <p>timestamp</p> -->
+                    </div>
+                    <div class="others__message msgs">
+                        <!-- <h4> this message is from Others</h4>
+                        <p>timestamp</p> -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="send__message">
+              <form action="" method="post" id="send__message__form">
+                <input type="text" id="msgText" placeholder="Write Your Message">
+                <button type="submit">➤</button>
+              </form>
+            </div>
+            <div class="send__media">
+                <form action="" method="post"  enctype="multipart/form-data" id="send__message__form">
+                  <input type="file" id="msgFile">
+                  <button type="submit">➤</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="notification-container">
+        
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
